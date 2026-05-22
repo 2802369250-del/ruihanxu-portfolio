@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 6% 96%;
+    --foreground: 0 0% 10%;
+  }
+  
+  body {
+    @apply bg-minimal-bg text-minimal-text antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .artistic-header {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+  
+  .minimal-label {
+    @apply text-[10px] uppercase tracking-[0.3em] font-medium opacity-50;
+  }
+  
+  .minimal-border {
+    @apply border-minimal-text/10;
+  }
+}
